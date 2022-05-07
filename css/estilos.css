@@ -59,6 +59,10 @@ ul {
     text-decoration: none;
 }
 
+.nav__enlace:hover {
+    color: #1ED660;
+}
+
 .seccion1 {
     background-color: #2941AA;
     color: #1ED660;
@@ -503,6 +507,31 @@ ul {
 }
 
 
+.ayuda1 {
+    background-color: #eaeaea;
+    color: #333333;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.ayuda1__titulo {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.ayuda1__lista {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    list-style: none;
+    list-style-type: none;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
 /* 
     Media Queys -> van al final de nuestros estilos
     @media screen and (max-width: 600px) { Estilos para movil..... }
@@ -547,6 +576,10 @@ ul {
 /* Es importante el orden de las medias querys para que se pisen */
 
 @media screen and (max-width: 600px) {
+    .leo {
+        text-align: center;
+    }
+
     .seccion1 {
         display: flex; /* Aparece */
         height: 100vh;
@@ -599,6 +632,8 @@ ul {
         color: green;
     }
 
+    /* Inicio - Menu Lateral */
+
     #lateral {
         display: block;
         background-color: rgba(0, 0, 0, 0.8);
@@ -626,6 +661,8 @@ ul {
     .nav__item--close {
         display: block;
     }
+
+    /* Fin - Menu Lateral */
     
     .categories__grid {
         grid-template-columns: 1fr;
