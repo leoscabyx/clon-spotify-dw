@@ -582,6 +582,59 @@ ul {
     padding: 100px 0;
 }
 
+.gender__item:nth-child(2) {
+    color: red;
+}
+
+.gender__item:nth-child(odd) { /* Impares */
+    color: #1ED660;
+}
+
+.gender__item:nth-child(even) { /* Pares */
+    background-color: #eaeaea;
+    color: rebeccapurple;
+}
+
+.gender__item:nth-child(10) {
+    color: orange;
+}
+
+.gender__item:last-child { /* Seleccionar el ultimo elemento hijo de manera automatica */
+    color: pink;
+}
+
+.gender__item:first-child { /* Seleccionar el primer elemento hijo de manera automatica */
+    color: pink;
+}
+
+.gender__item:nth-last-child(1) {
+    color: brown;
+}
+
+.premium2 {
+    background-color: lightgray;
+    padding-bottom: 3rem;
+}
+
+.premium2__imagen {
+    transition: all 1s;
+}
+
+.premium2__imagen:hover {
+    cursor: pointer;
+    /* box-shadow: ejeX ejeY blur spread color */
+    
+}
+
+.premium2__item:nth-child(odd) .premium2__imagen:hover {
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.premium2__item:nth-child(even) .premium2__imagen:hover {
+    box-shadow: -10px -10px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+
 /* 
     Media Queys -> van al final de nuestros estilos
     @media screen and (max-width: 600px) { Estilos para movil..... }
