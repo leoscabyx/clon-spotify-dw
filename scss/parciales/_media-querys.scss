@@ -1,0 +1,151 @@
+/* 
+    Media Queys -> van al final de nuestros estilos
+    @media screen and (max-width: 600px) { Estilos para movil..... }
+    @media screen and (max-width: 1024px) { Estilos para tablet..... } 
+
+    mobile first -> min-width
+    desktop first -> max-width -> de esta forma venimos trabajando
+*/
+
+@media screen and (max-width: 1023px) {
+    /* Codigo de CSS que ya conocen, es decir los selectores y propiedades a modificar, agregar, eliminar */
+
+    .header {
+        /* background-color: red; */
+        flex-direction: column;
+    }
+
+    .categories {
+        padding: 2rem 1rem;
+    }
+
+    .categories__grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 220px);
+        grid-template-areas: 
+        "ele1 ele2 ele3" 
+        "ele4 ele5 ele6"
+        "ele7 ele8 ele9";
+    }
+
+    .genders__contenedor {
+        padding: 0 1rem;
+    }
+
+    .genders__flecha {
+        top: unset;
+        bottom: 0;
+        transform: translateX(-25%);
+    }
+}
+
+/* Es importante el orden de las medias querys para que se pisen */
+
+@media screen and (max-width: 600px) {
+    .leo {
+        text-align: center;
+    }
+
+    .seccion1 {
+        display: flex; /* Aparece */
+        height: 100vh;
+    }
+
+    .header {
+        /* background-color: rebeccapurple; */
+        flex-direction: row;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header__open {
+        display: block;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .seccion1__titulo {
+        font-size: 40px;
+    }
+
+    .seccion1__subtitulo {
+        font-size: 25px;
+        color: white;
+    }
+
+    .seccion1__parrafo {
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__texto {
+        order: -1;
+    }
+
+    .footer__marca {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .jam-whatsapp {
+        color: $color-principal;
+    }
+
+    /* Inicio - Menu Lateral */
+
+    #lateral {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: right 1s;
+    }
+
+    #lateral:target {
+        right: 0;
+    }
+
+    .nav__lista {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav__item--close {
+        display: block;
+    }
+
+    /* Fin - Menu Lateral */
+    
+    .categories__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 220px);
+        grid-template-areas: 
+            "ele1"
+            "ele2"
+            "ele3"
+            "ele4"
+            "ele5"
+            "ele6"
+            "ele7"
+            "ele8";
+    }
+
+    .nav__item {
+        margin-left: 0;
+    }
+
+}

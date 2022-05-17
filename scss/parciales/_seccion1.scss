@@ -1,0 +1,31 @@
+.seccion1 {
+    background-color: #2941AA;
+    color: $color-principal;
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../imagenes/fondo-ilustracion-1.svg);
+    background-size: cover;
+    background-position: 200px center;
+    background-repeat: no-repeat;
+}
+
+.seccion1__titulo {
+    font-size: 70px;
+}
+
+.seccion1__subtitulo {
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.seccion1__parrafo {
+    font-size: 12px;
+    text-transform: uppercase;
+}

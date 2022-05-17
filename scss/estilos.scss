@@ -1,0 +1,15 @@
+/* Este es mi archivo principal de SASS */
+/* Importando todos los parciales de mis estilos */
+
+/* Aclaracion es importante el orden de importacion */
+@import "parciales/_variables.scss";
+@import "parciales/_parcial1.scss";
+@import "parciales/_header.scss";
+@import "parciales/_seccion1.scss";
+@import "parciales/_seccion2.scss";
+@import "parciales/_footer.scss";
+@import "parciales/_categories.scss";
+@import "parciales/_genders.scss";
+@import "parciales/_ayuda.scss";
+@import "parciales/_extras.scss";
+@import "parciales/_media-querys.scss";

@@ -1,0 +1,65 @@
+.genders {
+    background-color: #121212;
+    color: #fff;
+    min-height: 300px;
+    padding-bottom: 5rem;
+}
+
+.genders__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.genders__title {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.genders__flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow: auto;
+
+    scrollbar-color: $color-principal;
+    scrollbar-width: none;
+}
+
+.genders__flex::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.genders__flex::-webkit-scrollbar-thumb {
+    background-color: $color-principal;
+}
+
+.genders__flex::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.gender__item {
+    background-color: #333333;
+    width: 80%;
+    max-width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.genders__relative {
+    position: relative;
+}
+
+.genders__flecha {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(50%);
+    cursor: pointer;
+}

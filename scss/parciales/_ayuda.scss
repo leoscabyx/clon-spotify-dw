@@ -1,0 +1,24 @@
+.ayuda1 {
+    background-color: #eaeaea;
+    color: #333333;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.ayuda1__titulo {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.ayuda1__lista {
+    color: $color-principal;
+    font-weight: bold;
+    font-size: 18px;
+    list-style: none;
+    list-style-type: none;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
