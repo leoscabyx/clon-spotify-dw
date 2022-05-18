@@ -1,6 +1,169 @@
 /* Este es mi archivo principal de SASS */
 /* Importando todos los parciales de mis estilos */
 /* Aclaracion es importante el orden de importacion */
+.sass-2 {
+  color: transparent;
+}
+
+/* Bucles */
+/* For */
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Each */
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black;
+}
+
+/* Usando mapas y el each */
+/*Declaramos nuestro mapa (array asocitivo o un objeto)*/
+/* Usando el mapa */
+.btn-twitter {
+  background-color: #55acee;
+}
+
+.btn-facebook {
+  background-color: #3a5795;
+}
+
+.btn-instagram {
+  background-color: #C25E30;
+}
+
+.btn-whatsapp {
+  background-color: green;
+}
+
+.btn-otro {
+  background-color: orange;
+}
+
+/* Otra forma de usar una mapa */
+div {
+  background-color: orange;
+  text-align: center;
+  padding: 5rem;
+  font-size: 35px;
+}
+
+.leo {
+  background-color: orange;
+}
+
+/* Extend */
+.boton, .boton--aceptar, .boton--cancelar {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.boton--aceptar {
+  background-color: green;
+  color: yellow;
+}
+
+.boton--cancelar {
+  background-color: red;
+  color: yellow;
+}
+
+/* MIXING */
+/* Declaramos primero el mixing */
+.box-small {
+  height: 100px;
+  width: 100px;
+  background-color: navy;
+}
+
+.box-medium {
+  height: 200px;
+  width: 200px;
+}
+
+.box-big {
+  height: 500px;
+  width: 500px;
+  background-color: orange;
+}
+
+.premium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ayuda {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.spotify {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 
     Como creo una variable en SASS:
     Sintaxis de como escribir una variable

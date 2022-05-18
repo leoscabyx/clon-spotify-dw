@@ -1,0 +1,150 @@
+$modo: leo;
+$theme-color: transparent; // Inicializar la variable con algun valor
+
+
+@if $modo == claro { 
+    /* Codigo css que ya conozco aca */
+    $theme-color: navy;
+} @else if $modo == oscuro {
+    /* Codigo css que ya conozco aca */
+    $theme-color: orange;
+}
+
+.sass-2 {
+    color: $theme-color; // Navy (Claro) - Orange (Oscuro)
+}
+
+/* Bucles */
+/* For */
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: (100% / 12) * $i;
+    }
+}
+
+/* Each */
+
+@each $color in blue, yellow, black {
+    .#{$color} {
+        background-color: #{$color}; 
+    }
+} 
+
+/* Usando mapas y el each */
+
+// $mapa: (
+    // clave1: valor;
+    // clave2: valor;
+    // clave3: valor;
+// ) 
+
+
+/*Declaramos nuestro mapa (array asocitivo o un objeto)*/
+
+$redes: ( 
+ twitter: #55acee,
+ facebook: #3a5795,
+ instagram: #C25E30,
+ whatsapp: green,
+ otro: orange
+); 
+
+/* Usando el mapa */
+@each $clave, $valor in $redes { 
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+/* Otra forma de usar una mapa */
+
+$estilos: (
+ color: orange,
+ centro: center,
+ tFuente: 35px,
+ padding : 1rem
+);
+
+
+div {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, padding) * 5;
+    font-size:map-get($estilos, tFuente);
+}
+
+.leo {
+    background-color: map-get($estilos, color);
+}
+
+/* Extend */
+
+.boton {
+    width:200px;
+    height:50px;
+    background-color:white;
+    text-align:center;
+    color:black;
+    border-radius:20px;
+    border:1px solid black;
+
+    &--aceptar {
+        @extend .boton;
+        background-color:green;
+        color:yellow;
+    }
+
+    &--cancelar {
+        @extend .boton;
+        background-color:red;
+        color:yellow;
+    }
+}
+
+/* MIXING */
+/* Declaramos primero el mixing */
+
+// @mixing nombreMixing($parametro1, $parametro2, N...) { ...... }
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.box-small {
+    @include sizes(100px, 100px);
+    background-color: navy;
+}
+
+.box-medium {
+    @include sizes(200px, 200px);
+}
+
+.box-big {
+    @include sizes(500px, 500px);
+    background-color: orange;
+}
+
+@mixin generarFlex($direction, $eje-principal, $eje-secundario: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
+.premium {
+    @include generarFlex(column, center, center);
+}
+
+.ayuda {
+    @include generarFlex(row, flex-start, center)
+}
+
+.spotify {
+    @include generarFlex(row, center)
+}
+   
+
+
+
+   
