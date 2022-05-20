@@ -1,0 +1,14 @@
+/* Declaramos primero el mixing */
+
+// @mixing nombreMixing($parametro1, $parametro2, N...) { ...... }
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin generarFlex($direction, $eje-principal, $eje-secundario: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
