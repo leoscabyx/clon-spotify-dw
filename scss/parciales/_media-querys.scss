@@ -54,17 +54,20 @@
     .header {
         /* background-color: rebeccapurple; */
         flex-direction: row;
+
+        &__open {
+            display: block;
+            font-size: 32px;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: white;
+            }
+        }
     }
 
     .nav {
         display: none;
-    }
-
-    .header__open {
-        display: block;
-        font-size: 32px;
-        color: white;
-        text-decoration: none;
     }
 
     .seccion1__titulo {

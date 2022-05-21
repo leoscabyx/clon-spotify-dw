@@ -67,7 +67,7 @@ $estilos: (
 );
 
 
-div {
+.otra-clase {
     background-color: map-get($estilos, color);
     text-align: map-get($estilos, centro);
     padding: map-get($estilos, padding) * 5;
@@ -144,7 +144,21 @@ div {
     @include generarFlex(row, center)
 }
    
+@mixin generarAnchoAlto($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
 
+.seccion1 {
+    @include generarAnchoAlto(100%, 300px);
+    text-align: center;
+}
+
+.seccion2 {
+    @include generarAnchoAlto(100%, 100vh);
+    padding: 2rem;
+    background-color: navy;
+}
 
 
    

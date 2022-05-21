@@ -1,1 +1,6 @@
 Aca van a describri lo que hayan aplicado de SEO
+
+Coloque las etiquetas keywords y description.
+Quite todos los textos de relleno pero aun me falto capaz unas imagenes de las redes sociales pero eso estaria listo luego.
+Verifique y manipule la jerarquia de los encabezados (h1-h6) en mi proyecto.
+Ademas estuve comprimiendo mis imagenes y en la parte de video estuve subiendo dicho video a youtube y me traje el iframe en la pagina de contaco.
